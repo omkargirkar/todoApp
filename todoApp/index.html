@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="handleFormSubmit(event)">
+        <label for="todoname">Todo Name</label>
+        <input type="text" id="todoname" name="todoname"> <br>
+        <label for="description">Description</label><br>
+        <textarea cols="30" rows="10" id="description" name="description"></textarea><br>
+        <button type="submit">Add Todo</button>
+    </form>
+    <ul id="pendingTodos">Pending todos</ul>
+    <ul id="completedTodos">Completed todos</ul>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+<script src="index.js"></script>
+</html>
